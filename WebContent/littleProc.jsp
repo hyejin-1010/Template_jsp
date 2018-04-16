@@ -7,22 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<center>방명록</center>
-	<table>
-		<tr>
-			<td> 제목 </td>
-			<td> <input type="text" name="title" size=20> </td>
-		</tr>
-		<tr>
-			<td colspan=2>
-				<textarea rows="20" cols="20"></textarea>
-			</td>
-		</tr>
-		<tr>
-			<td colspan=2>
-				<input type="button" value="글작성" />
-			</td>
-		</tr>
-	</table>
+리틀포레스트
 </body>
 </html>
