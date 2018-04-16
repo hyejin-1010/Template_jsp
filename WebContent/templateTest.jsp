@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-templateTest.jsp
+<%
+	String contentPage = request.getParameter("CONTENTPAGE");
+%>
+<%= contentPage %>
 </body>
 </html>
