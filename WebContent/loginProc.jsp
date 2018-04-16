@@ -7,6 +7,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-로그인 폼
+
+	<table border=1>
+		<tr>
+			<td> ID </td>
+			<td> <input type="text" name="id"> </td>
+		</tr>
+		<tr>
+			<td> PW </td>
+			<td> <input type="password" name="pw"> </td>
+		</tr>
+		<tr>
+			<td colspan=2 align="center"> 
+				<input type="submit" value="로그인">
+				<input type="reset" value="취소">
+			</td>
+		</tr>
+	</table>
+
 </body>
 </html>
