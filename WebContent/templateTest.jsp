@@ -10,7 +10,6 @@
 <%
 	String contentPage = request.getParameter("CONTENTPAGE");
 %>
-<%= contentPage %>
 
 <table border=1 width=500 cellpadding=2 cellspacing=0>
 	<tr>
@@ -18,7 +17,7 @@
 	</tr>
 	<tr>
 		<td width=150 valign="top"> <jsp:include page="left.jsp" /> </td>
-		<td width=350 valign="top">내용이 변경되는 부분</td>
+		<td width=350 valign="top"> <jsp:include page="<%= contentPage %>" flush="false" /> </td>
 	</tr>
 	<tr>
 		<td colspan=2> <jsp:include page="bottom.jsp" /> </td>
