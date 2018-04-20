@@ -7,23 +7,52 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<table border=1>
+	<% 
+	request.setCharacterEncoding("UTF-8");
+	String username = request.getParameter("username");
+	String pw = request.getParameter("pw");
+	%>
+	
+	<%-- 주석 
+	<table>
 		<tr>
-			<td> ID </td>
-			<td> <input type="text" name="id"> </td>
+			<th> 아이디 </th>
+			<td> <%= username %> </td>
 		</tr>
 		<tr>
-			<td> PW </td>
-			<td> <input type="password" name="pw"> </td>
-		</tr>
-		<tr>
-			<td colspan=2 align="center"> 
-				<input type="submit" value="로그인">
-				<input type="reset" value="취소">
-			</td>
+			<th> 비밀번호 </th>
+			<td> <%= pw %> </td>
 		</tr>
 	</table>
-
+	--%>
+	
+	<%-- 주석 2
+	<%
+		if(username.equals("choi")) {
+			if(pw.equals("1234")){
+				out.println("[로그인 성공]");
+			} else {
+				out.println("비밀번호를 확인해주세요.");
+			}
+		} else {
+			out.println("회원가입을 하세요. ");
+		}
+	
+	%>
+	--%>
+	
+	<%
+		if(username.equals("choi")) {
+			if(pw.equals("1234")){ %>
+				<jsp:forward page="loginOK.jsp"></jsp:forward>
+	<%	
+			} else { %>
+				<jsp:forward page="login.jsp"></jsp:forward>
+	<%		}
+		} else { %>
+		
+	<%	}
+	
+	%>
 </body>
 </html>
