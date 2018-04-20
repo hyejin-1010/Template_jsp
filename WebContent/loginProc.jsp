@@ -50,7 +50,7 @@
 				<jsp:forward page="login.jsp"></jsp:forward>
 	<%		}
 		} else { %>
-		
+			<jsp:forward page="insert.jsp"></jsp:forward>
 	<%	}
 	
 	%>
