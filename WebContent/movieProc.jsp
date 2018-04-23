@@ -17,5 +17,16 @@
 		out.println(filenames[i]+"<br>");
 	}
 %>
+	<h4>규정이가 좋아하는 영화 Best3</h4>
+	
+<%
+	for(String filename : filenames){ %>
+	<a href="movieReader.jsp?FILE=<%= filename %>">
+	<%= filename %>
+	<br> 
+	</a>
+<%
+	} // for
+%>
 </body>
 </html>

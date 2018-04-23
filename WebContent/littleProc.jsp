@@ -31,9 +31,9 @@
 	catch(Exception e){
 		out.println("지정한 파일을 찾을 수 없습니다.");
 	}
-	
 %>
 
+<a href="movie.jsp">글 목록</a>
 
 </body>
 </html>
