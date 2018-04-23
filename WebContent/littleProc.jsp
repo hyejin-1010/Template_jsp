@@ -33,7 +33,5 @@
 	}
 %>
 
-<a href="movie.jsp">글 목록</a>
-
 </body>
 </html>
